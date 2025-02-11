@@ -1,0 +1,227 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+/* Модельное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.calendar-day {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative; /* Нужно для точного позиционирования точки */
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    text-align: center;
+}
+
+.event-dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin: 5px auto; /* Позиционируем точку под днем */
+}
+
+.all-events {
+    padding-left: 15px;
+    margin: 15px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff5a00;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.all-events:hover {
+    background-color: #ff4500;
+}
+
+.news-h1{
+    font-size: 60px;
+    font-family: 'Mixed', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left; /* Выравниваем по левому краю */
+    margin-top: 135px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+    width: 100%;
+    padding-left: 60px; /* Отступ слева */
+    padding-right: 90px; /* Отступ справа */
+}
+
+
+
+    
+
+/* Блоки сверху и снизу */
+.top-blocks, .bottom-blocks {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 0; /* Убираем верхний отступ */
+    margin-bottom: 0; /* Убираем нижний отступ */
+    padding-top: 20px; /* Небольшой внутренний отступ сверху */
+    padding-bottom: 0; /* Убираем внутренний отступ снизу */
+}
+
+
+.top-blocks {
+    margin-bottom: 80px;
+}
+
+.bottom-blocks {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Инфоблок */
+.info-block {
+    width: 100%; /* Подстраиваем под грид */
+    max-width: 350px; /* Чтобы не растягивались слишком сильно */
+    margin: 0 10px; /* Убираем отступ сверху */
+    padding: 20px; /* Добавляем небольшой внутренний отступ */
+    height: 400px;
+    background-color: #41b7de;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
+    border-radius: 20px;
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.info-block {
+    background: linear-gradient(to bottom, #ffffff, #aaaaaa); /* Градиент, имитирующий тень */
+}
+.info-block:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2);
+}
+
+/* Подвал */
+.footer {
+    width: 100%;
+    background-color: #021024;
+    color: white;
+    padding: 50px 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    margin-left: 7px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.contact-info img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.footer-right {
+    margin-top: 45px;
+    margin-left: 120px; /* Двигаем правее, но не по центру */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 8px 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

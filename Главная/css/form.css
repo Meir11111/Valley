@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contact-form {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.contact-form h3 {
+    font-family: "Roboto", serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Поля формы */
+
+
+.form-field label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.form-field input, 
+.form-field textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px auto;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; /* Делаем блочным элементом */
+}
+
+/* Кнопка отправки */
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 220px; 
+}
+
+.btn-sub{
+    display: flex;
+    justify-content: end;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Иконки социальных сетей */
+.icons-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 80px 0;
+    margin-top: 120px;
+}
+
+.icon-item {
+    margin: 0 30px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.icon {
+    display: flex;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Модальное окно */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Сообщения */
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.response-message {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}

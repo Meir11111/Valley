@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>ABAI IT VALLEY</title>
+</head>
+<body>
+    <script src="Script.js"></script>
+
+    <!-- Меню -->
+    <header class="menu">
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Стартапы</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Обучение</a></li>
+                <li><a href="#">Сфера IT услуг</a></li>
+                <li><a href="#">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Баннер "ABAI IT VALLEY" -->
+    <section class="hero">
+        <h1>ABAI IT VALLEY</h1>
+        <h2>Инвестируем и обучаем</h2>
+        <p>Мы активно инвестируем в инновации и обучаем будущих лидеров IT-отрасли.</p>
+    </section>
+    <!-- Баннер "ABAI IT VALLEY" -->
+
+    <!-- Календарь -->
+    <section class="calendar-wrapper">
+        <div class="calendar-container">
+            <div class="calendar-content">
+                <div class="calendar-box">
+                    <h2>Календарь мероприятий</h2>
+                    <div class="calendar-header">
+                        <button class="prev-month">←</button>
+                        <span class="month-year"></span>
+                        <button class="next-month">→</button>
+                    </div>
+                    <div class="calendar-days"></div>
+                    <div class="event-info"></div>
+                    <button class="all-events">Все мероприятия</button>
+                </div>
+                <div class="calendar-image">
+                    <img src="css/images/Valley.jpg" alt="Картинка" class="calendar-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Календарь -->
+
+    <!-- Модальное окно -->
+    <div class="modal" id="eventsModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Подробности события</h2>
+            <p class="event-details"></p> <!-- Место для отображения информации о событии -->
+        </div>
+    </div>
+    <!-- Модальное окно -->
+
+    <!-- Слайдер -->
+    <div class="slider-background">
+        <h1 class="news-h1">СТАРТАПЫ</h1>
+        <div class="slider-container">
+            <div class="container">
+                <div class="sidebar">
+                    <div>
+                        <img src="css/images/Valley.jpg" alt="BREAKFAST">
+                        <h1>BREAKFAST</h1>
+                        <p>choose your favorite meal</p>
+                    </div>
+                    <div>
+                        <img src="css/images/Valley.jpg" alt="LUNCH">
+                        <h1>LUNCH</h1>
+                        <p>choose your favorite meal</p>
+                    </div>
+                    <div>
+                        <img src="css/images/Valley.jpg" alt="DINNER">
+                        <h1>DINNER</h1>
+                        <p>choose your favorite meal</p>
+                    </div>
+                    <div>
+                        <img src="css/images/Valley.jpg" alt="SNACK">
+                        <h1>SNACK</h1>
+                        <p>choose your favorite meal</p>
+                    </div>
+                </div>
+                
+            <div class="main-slide">
+                <div>
+                    <img src="css/images/Valley.jpg" alt="Slide Image 1">
+                </div>
+                <div>
+                    <img src="css/images/Valley.jpg" alt="Slide Image 2">
+                </div>
+                <div>
+                    <img src="css/images/Valley.jpg" alt="Slide Image 3">
+                </div>
+                <div>
+                    <img src="css/images/Valley.jpg" alt="Slide Image 4">
+                </div>
+            </div>
+            
+            </div>
+            <div class="controls">
+                <button class="down-button">
+                <i class="fas fa-arrow-down"></i>
+                </button>
+                <button class="up-button">
+                <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Слайдер -->
+
+    <!-- НОВОСТИ -->
+    <div class="news-container">
+        <h2 class="news-title">НОВОСТИ</h2>
+        <div class="background-container"></div>
+        <div class="blocks-container">
+            <div class="info-block">1</div>
+            <div class="info-block">2</div>
+            <div class="info-block">3</div>
+            <div class="info-block">4</div>
+            <div class="info-block">5</div>
+            <div class="info-block">6</div>
+        </div>
+    </div>
+    <!-- НОВОСТИ -->
+
+    <!-- Иконки -->
+    <div class="icon-container">
+        <div class="icon-item">
+            <img src="css/images/abai_oblysy_logo 1.png" alt="Icon 1" class="icon">
+        </div>
+        <div class="icon-item">
+            <img src="css/images/download 1.png" alt="Icon 2" class="icon">
+        </div>
+        <div class="icon-item">
+            <img src="css/images/Group 75.png" alt="Icon 3" class="icon">
+        </div>
+        <div class="icon-item">
+            <img src="css/images/uab logo.png" alt="Icon 4" class="icon">
+        </div>
+    </div>
+    <!-- Иконки -->
+      
+    <!-- Форма обратной связи  -->
+    <section class="contact-form">
+        <div class="container">
+            <h3>Остались вопросы? Напишите нам, заполнив форму:</h3>
+            <form action="https://getform.io/f/bzyyklda" method="POST" id="contact-form">
+                <div class="form-field">
+                    <label for="name">Имя и Фамилия:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="name-error">Пожалуйста, введите имя</span>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error">Пожалуйста, введите правильный email</span>
+                </div>
+                <div class="form-field">
+                    <label for="phone">Телефон:</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="form-field">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <span class="error-message" id="message-error">Пожалуйста, напишите сообщение</span>
+                </div>
+                <div class="btn-sub">
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </div>
+            </form>
+            <div class="response-message" id="response-message"></div>
+        </div>
+    </section>
+
+    <!-- Подвал с ABAI IT VALLEY -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Левая часть: Социальные сети и контактная информация -->
+            <div class="footer-left">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/p/Abai-IT-Valley-100079608060592/" target="_blank"><img src="css/images/Facebook.jpg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/abai_it/" target="_blank"><img src="css/images/Instagram.jpg" alt="Instagram"></a>
+                    <a href="https://kz.linkedin.com/in/abai-it-valley-446b32234" target="_blank"><img src="css/images/LinkedIn.jpg" alt="LinkedIn"></a>
+                </div>
+            <div class="contact-info">
+                <p><img src="css/images/map-marker.png" alt="Location"> город Семей, Абая 107</p>
+                <p><img src="css/images/envelope-alt.png" alt="Email"> город Семей, Абая 107</p>
+                <p><img src="css/images/phone-alt.png" alt="Phone"> город Семей, Абая 107</p>
+            </div>
+            </div>
+            <!-- Правая часть: ссылки -->
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="#">Мероприятия</a>
+                    <a href="#">Наши партнеры</a>
+                    <a href="#">Для инвестора</a>
+                    <a href="#">Форма обратной связи</a>
+                </div>
+                </div>
+            </div>
+    </footer>    
+</body>
+</html>

@@ -1,0 +1,803 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Меню */
+.menu {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Белый фон для меню */
+    padding: 20px 0; /* Увеличенные отступы для меню */
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 12px 20px;
+    display: block;
+    line-height: 1.5;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Баннер "ABAI IT VALLEY" */
+.hero {
+    background-image: url('Black Modern Information Technology Delivery Book Cover.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 102vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;  /* Убираем отступы, чтобы избежать лишнего пространства */
+    background-color: #333; /* Темный фон для баннера */
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-family: 'Mixed', sans-serif;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    font-family: 'Tektur', sans-serif;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Календарь */
+
+.calendar-wrapper {
+        background: linear-gradient(to bottom, #000000, #03295d);
+        position:relative;
+        height: 100vh;
+        margin: 0;  /* Убираем все отступы сверху и снизу */
+        padding-top: 0;  /* Убираем отступ сверху */
+        padding-bottom: 0; /* Убираем отступ снизу */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 80px;
+        border-radius: 0px;
+    }
+    
+    .calendar-container {
+        width: 750px;
+        height:500px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .month-year{
+        font-family: Sans-serif;
+        font-size:25px;
+    }
+    .next-month{
+     background-color: #ff5a00; /* Зеленый фон */
+    color: white; /* Белый текст */
+    padding: 15px 20px; /* Отступы внутри кнопки */
+    text-align: center; /* Выравнивание текста */
+    text-decoration: none; /* Без подчеркивания */
+    display: inline-block; /* Блок в одну строку */
+    font-size: 10px; /* Размер шрифта */
+    margin: 4px 2px; /* Отступы вокруг кнопки */
+    cursor: pointer; /* Курсор в виде руки */
+    border-radius: 8px; /* Скругленные углы */
+    border: none; /* Без рамки */
+    transition: background-color 0.3s ease; /* Плавное изменение фона */
+    }
+    .prev-month{
+        background-color: #ff5a00; /* Зеленый фон */
+       color: white; /* Белый текст */
+       padding: 15px 20px; /* Отступы внутри кнопки */
+       text-align: center; /* Выравнивание текста */
+       text-decoration: none; /* Без подчеркивания */
+       display: inline-block; /* Блок в одну строку */
+       font-size: 10px; /* Размер шрифта */
+       margin: 4px 2px; /* Отступы вокруг кнопки */
+       cursor: pointer; /* Курсор в виде руки */
+       border-radius: 8px; /* Скругленные углы */
+       border: none; /* Без рамки */
+       transition: background-color 0.3s ease; /* Плавное изменение фона */
+       }
+    .calendar-content {
+        font-family: Mixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .calendar-box {
+        flex: 1;
+        padding-right: 20px;
+    }
+    
+    .calendar-box h2 {
+        margin-top: 15px;
+        padding-left: 17px;
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .calendar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+     margin-top: 10px;
+}
+    
+.calendar-day {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    cursor: pointer;
+}    
+.calendar-day.current-day {
+        background-color: #007bff;
+        color: white;
+}
+    
+.calendar-day.event-day {
+    background-color: #007bff;
+    color: white;
+}
+    
+    .calendar-image {
+    flex: 1;
+    text-align: right;
+}
+    
+.calendar-img {
+    width: 300px;
+    height: 350px;
+}
+
+/* Модельное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.calendar-day {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative; /* Нужно для точного позиционирования точки */
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    text-align: center;
+}
+
+.event-dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin: 5px auto; /* Позиционируем точку под днем */
+}
+
+.all-events {
+    padding-left: 15px;
+    margin: 15px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff5a00;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.all-events:hover {
+    background-color: #ff4500;
+}
+
+.news-h1{
+    font-size: 60px;
+    font-family: 'Mixed', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left; /* Выравниваем по левому краю */
+    margin-top: 135px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+    width: 100%;
+    padding-left: 60px; /* Отступ слева */
+    padding-right: 90px; /* Отступ справа */
+}
+
+/* СЛАЙДЕР */
+.slider-background{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #01285d, #000000);
+}
+.news-h1{
+    font-size: 60px;
+    font-family: 'Mixed', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left; /* Выравниваем по левому краю */
+    margin-top: 135px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+    width: 100%;
+    padding-left: 60px; /* Отступ слева */
+    padding-right: 90px; /* Отступ справа */
+}
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 70vw;
+    height: 70vh;
+  }
+  .sidebar {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .sidebar > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .sidebar h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+  }
+  
+  .main-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .main-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  button:hover {
+    color: #222;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .container .controls button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+  }
+  
+  .container .controls .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .container .controls .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+/* Блоки */
+/* Оставляем контейнер с блоками по центру */
+.news-container{
+    background: linear-gradient(to bottom, #000000, #01285E);
+    width: 100%;
+    height: 100%;
+}
+.blocks-container {
+    background: linear-gradient(to bottom,#050215 , #01285E);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    grid-template-rows: repeat(2, auto); /* 2 ряда */
+    margin: 0 auto; /* Центрируем */  
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    grid-template-rows: repeat(2, auto); /* 2 ряда */
+    gap: 20px; /* Отступы между блоками */
+    justify-content: center;
+    align-items: center;
+    width: 85%; /* Чтобы блоки не прилипали к краям */
+    padding: 50px 0;
+}
+/* Заголовок инфоблока */
+.news-title h2 {
+    margin-bottom: 10px; 
+    font-size: 60px;
+    font-family: 'Mixed', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 50px;
+    margin-top: 20px; /* Убираем отрицательные отступы */
+}
+.news-title {
+    font-size: 60px;
+    font-family: 'Mixed', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left; /* Выравниваем по левому краю */
+    margin-top: 135px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+    width: 100%;
+    padding-left: 60px; /* Отступ слева */
+    padding-right: 90px; /* Отступ справа */
+}
+    
+
+/* Блоки сверху и снизу */
+.top-blocks, .bottom-blocks {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 0; /* Убираем верхний отступ */
+    margin-bottom: 0; /* Убираем нижний отступ */
+    padding-top: 20px; /* Небольшой внутренний отступ сверху */
+    padding-bottom: 0; /* Убираем внутренний отступ снизу */
+}
+
+
+.top-blocks {
+    margin-bottom: 80px;
+}
+
+.bottom-blocks {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Инфоблок */
+.info-block {
+    width: 100%; /* Подстраиваем под грид */
+    max-width: 350px; /* Чтобы не растягивались слишком сильно */
+    margin: 0 10px; /* Убираем отступ сверху */
+    padding: 20px; /* Добавляем небольшой внутренний отступ */
+    height: 400px;
+    background-color: #41b7de;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
+    border-radius: 20px;
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.info-block {
+    background: linear-gradient(to bottom, #ffffff, #aaaaaa); /* Градиент, имитирующий тень */
+}
+.info-block:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2);
+}
+/* Подвал с формой */
+.contact-form {
+
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; /* Увеличиваем отступ сверху, чтобы отделить от блока новостей */
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-field {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-field label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-field input, .form-field textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Иконки социальных сетей */
+.icons-row {
+    display: flex;
+    justify-content: space-between; /* Раскидывает иконки равномерно */
+    align-items: center; /* Выравнивает их по одной линии */
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 80px 0; /* Отступ сверху и снизу */
+    margin-top: 120px; /* Отделяет от инфоблока выше */
+}
+.icon-item{
+    margin: 0 30px;
+}
+.icon-container {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 40px; /* Уменьшаем отступ снизу */
+}
+
+.icon {
+    display: flex;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+
+/* Отделение формы от иконок */
+
+.icon img {
+    width: 100px; 
+    height: 100px;
+    object-fit: contain;
+}
+/* Стили для содержимого модального окна */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Стили для кнопки закрытия */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+/* Подвал */
+.footer {
+    width: 100%;
+    background-color: #021024;
+    color: white;
+    padding: 50px 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    margin-left: 7px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.contact-info img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Перемещаем блок с ссылками правее */
+.footer-right {
+    margin-top: 45px;
+    margin-left: 120px; /* Двигаем правее, но не по центру */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 8px 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+/* Адаптивные стили */
+@media (max-width: 1024px) {
+    .hero {
+        height: 85vh;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .calendar-wrapper {
+        padding: 20px;
+    }
+
+    .calendar-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        width: 90%;
+    }
+
+    .calendar-header,
+    .calendar-days {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .calendar-img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    .calendar-box h2 {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        padding: 10px 0;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .calendar-container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .calendar-img {
+        display: none;
+    }
+
+    .calendar-wrapper {
+        padding: 10px;
+    }
+
+    .hero {
+        height: 75vh;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .calendar-day {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .calendar-box h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-day {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .calendar-container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .calendar-box h2 {
+        font-size: 16px;
+    }
+}

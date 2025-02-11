@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.calendar-wrapper {
+    background: linear-gradient(to bottom, #000000, #03295d);
+    position:relative;
+    height: 100vh;
+    margin: 0;  /* Убираем все отступы сверху и снизу */
+    padding-top: 0;  /* Убираем отступ сверху */
+    padding-bottom: 0; /* Убираем отступ снизу */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    border-radius: 0px;
+}
+
+.calendar-container {
+    width: 750px;
+    height:500px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.month-year{
+    font-family: Sans-serif;
+    font-size:25px;
+}
+.next-month{
+    background-color: #ff5a00; /* Зеленый фон */
+    color: white; /* Белый текст */
+    padding: 15px 20px; /* Отступы внутри кнопки */
+    text-align: center; /* Выравнивание текста */
+    text-decoration: none; /* Без подчеркивания */
+    display: inline-block; /* Блок в одну строку */
+    font-size: 10px; /* Размер шрифта */
+    margin: 4px 2px; /* Отступы вокруг кнопки */
+    cursor: pointer; /* Курсор в виде руки */
+    border-radius: 8px; /* Скругленные углы */
+    border: none; /* Без рамки */
+    transition: background-color 0.3s ease; /* Плавное изменение фона */
+}
+.prev-month{
+    background-color: #ff5a00; /* Зеленый фон */
+    color: white; /* Белый текст */
+    padding: 15px 20px; /* Отступы внутри кнопки */
+    text-align: center; /* Выравнивание текста */
+    text-decoration: none; /* Без подчеркивания */
+    display: inline-block; /* Блок в одну строку */
+    font-size: 10px; /* Размер шрифта */
+    margin: 4px 2px; /* Отступы вокруг кнопки */
+    cursor: pointer; /* Курсор в виде руки */
+    border-radius: 8px; /* Скругленные углы */
+    border: none; /* Без рамки */
+    transition: background-color 0.3s ease; /* Плавное изменение фона */
+   }
+.calendar-content {
+    font-family: Mixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.calendar-box {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.calendar-box h2 {
+    font-family: "Russo One", serif;
+    font-weight: 400;
+    margin-top: 15px;
+    padding-left: 17px;
+    text-align: left;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.calendar-day {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    cursor: pointer;
+}    
+.calendar-day.current-day {
+    background-color: #007bff;
+    color: white;
+}
+
+.calendar-day.event-day {
+    background-color: #007bff;
+    color: white;
+}
+
+.calendar-image {
+    flex: 1;
+    text-align: right;
+}
+
+.calendar-img {
+    width: 300px;
+    height: 350px;
+}
+/* Общие стили для адаптации */
+@media (max-width: 1024px) {
+    .menu {
+        padding: 15px 0;
+    }
+    
+    .calendar-wrapper {
+        padding: 20px;
+    }
+    
+    .calendar-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        width: 90%;
+    }
+    
+    .calendar-header,
+    .calendar-days {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .calendar-img {
+        width: 250px;
+        height: 300px;
+    }
+    
+    .modal-content {
+        width: 80%;
+    }
+    
+    .blocks-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .calendar-container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .calendar-img {
+        display: none;
+    }
+    
+    .hero {
+        height: 75vh;
+    }
+    
+    .blocks-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .info-block {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 25px;
+    }
+    
+    .hero h2 {
+        font-size: 18px;
+    }
+    
+    .calendar-day {
+        font-size: 14px;
+        padding: 6px;
+    }
+    
+    .calendar-container {
+        width: 100%;
+        padding: 5px;
+    }
+    
+    .blocks-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.news-container{
+    background: linear-gradient(to bottom, #000000, #01285E);
+    width: 100%;
+    height: 100%;
+}
+.blocks-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    grid-template-rows: repeat(2, auto); /* 2 ряда */
+    margin: 0 auto; /* Центрируем */  
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    grid-template-rows: repeat(2, auto); /* 2 ряда */
+    gap: 20px; /* Отступы между блоками */
+    justify-content: center;
+    align-items: center;
+    width: 85%; /* Чтобы блоки не прилипали к краям */
+    padding: 50px 0;
+}
+/* Заголовок инфоблока */
+.news-title h2 {
+    margin-bottom: 10px; 
+    font-size: 60px;
+    font-family: 'Mixed', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 50px;
+    margin-top: 20px; /* Убираем отрицательные отступы */
+}
+.news-title {
+    font-size: 96px;
+    font-family: "Russo One", serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left; /* Выравниваем по левому краю */
+    margin-top: 135px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+    width: 100%;
+    padding-left: 60px; /* Отступ слева */
+    padding-right: 90px; /* Отступ справа */
+}

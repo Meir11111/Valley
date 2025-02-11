@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Montserrat:wght@400;700&display=swap');
+body {
+    overflow-x: Hidden;
+    width: 100%;
+    margin: 0 auto; /* Центрируем */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+/* Меню */
+.menu {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Белый фон для меню */
+    padding: 20px 0; /* Увеличенные отступы для меню */
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 12px 20px;
+    display: block;
+    line-height: 1.5;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+/* Блоки */
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1443px;
+    height: 801px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.block-1, .block-3 {
+    color:#ffffff;
+    flex-direction: row;
+    background:#000F1F;
+}
+
+.block-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.caption {
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 31px;
+    margin-top: 10px;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.block-4 {
+    height: 500px; /* Оставил пустым для дальнейших правок */
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    height: 801px;
+    margin: 50px auto;
+    padding: 20px; /* Добавил паддинги */
+}
+
+.container img {
+    max-width: 45%;
+    height: auto;
+}
+
+.text {
+    max-width: 50%;
+    font-size: 18px;
+}
+
+.title {
+    font-family: 'Delicious Handrawn', cursive;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 22px;
+}
+/* Подвал */
+.footer {
+    width: 100%;
+    background-color: #021024;
+    color: white;
+    padding: 50px 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    margin-right:400px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    margin-left: 7px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.contact-info img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Перемещаем блок с ссылками правее */
+.footer-right {
+    margin-top: 45px;
+    margin-left: 120px; /* Двигаем правее, но не по центру */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 8px 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
