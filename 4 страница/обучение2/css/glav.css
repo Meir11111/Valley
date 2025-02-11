@@ -1,0 +1,81 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.course-header {
+    margin-top: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.course-info {
+    max-width: 60%;
+}
+.h1{
+    color: #000000;
+    font-size:45px;
+    font-weight: bold;
+}
+.text-h2{
+    color: white;
+}
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.enroll-btn {
+    font-weight: bold;
+    background-color: #070D59;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    width: 230px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.course-details {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.detail-box {
+    font-weight: bold;
+    width: 120px;
+    color: rgb(255, 255, 255);
+    background-color: #070D59;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center; /* Центрирование по горизонтали */
+}
+
+.course-image {
+    max-width: 35%;
+    border-radius: 8px;
+}
+
+.course-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 10px;
+}

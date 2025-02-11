@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body {
+    overflow-x: hidden;
+    margin: 0;
+    background: linear-gradient(to bottom, #000F1F, #004085);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1650px; /* Устанавливаем фиксированную высоту */
+    width: 1900px; /* Устанавливаем фиксированную ширину */
+    padding: 30px;
+    flex-direction: column;
+    
+}
+/* Меню */
+.menu {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Белый фон для меню */
+    padding: 20px 0; /* Увеличенные отступы для меню */
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 12px 20px;
+    display: block;
+    line-height: 1.5;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Сбрасываем отступы и добавляем стандартный шрифт */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Градиентный фон страницы */
+body {
+    height: 1844px;
+    margin: 100px 0;
+    background: linear-gradient(to bottom, #000F1F, #004085);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* Контейнер для всех блоков */
+.courses-container {
+    justify-content: center; 
+    margin-right: 100px;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 блока в ряд */
+    gap: 25px; /* Отступы между блоками */
+}
+
+/* Сам блок курса (он будет картинкой) */
+.course {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 657px;  /* Размер из твоего макета */
+    height: 342px; /* Размер из твоего макета */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 20px;
+    overflow: hidden;
+}
+.course-1{
+    margin-top: 250px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 657px;  /* Размер из твоего макета */
+    height: 342px; /* Размер из твоего макета */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 20px;
+    overflow: hidden;
+}
+.course-2{
+    margin-right: 290px;
+    margin-top: 250px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 657px;  /* Размер из твоего макета */
+    height: 342px; /* Размер из твоего макета */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 20px;
+    overflow: hidden;
+}
+.course-title {
+    justify-content: center;
+    margin-top: 299px;
+    font-size: 24px;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+}
+.course-details {
+    list-style: disc; /* Добавляет точки перед li */
+    padding-left: 20px; /* Отступ слева от края блока */
+    margin-top: 10px; /* Опускаем вниз */
+    color: #7E7E7E;
+}
+
+/* Блок с текстовой информацией (название, описание, цена) */
+.course-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60%;
+    color: black;
+}
+
+/* Название курса */
+.course-info h3 {
+    margin-top: 10px;
+    font-size: 24px;  /* Увеличил размер */
+    font-weight: bold; /* Жирный */
+    font-family: 'Russo One', sans-serif; /* Шрифт */
+}
+
+/* Описание (список li) */
+.course-info ul {
+    list-style-type: disc;  /* Добавил точки */
+    padding-left: 20px;  /* Отступ слева */
+    margin-top: 80px; /* Отодвинул вниз */
+}
+
+/* Каждый пункт списка */
+.course-info ul li {
+    font-size: 16px;
+    color: #7E7E7E;
+    margin-bottom: 5px;
+}
+
+/* Цена (в самом низу слева, максимально опущена) */
+.price {
+    font-size: 22px;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+    margin-top: 80px; /* Отодвигаем от <li> */
+    display: block;
+    left: 20px;
+}
+/* Кнопка "Записаться" */
+.register-btn {
+    margin-bottom: 12px;
+    margin-right: 80px;
+    position: absolute;
+    bottom: 10px; /* Чуть ниже */
+    right: 10px;  /* Отступ справа */
+    background-color: #132766;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Эффект при наведении */
+.register-btn:hover {
+    background-color: #1d3c8e;
+}
+/* Подвал */
+.footer {
+    margin-top: 200px;
+    width: 2000px;
+    background-color: #001528;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+
+    justify-content: center; 
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1700px;
+}
+
+.footer-left {
+    margin-right: 0px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    margin-left: 7px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.contact-info p {
+    padding: 5px;   
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.contact-info img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Перемещаем блок с ссылками правее */
+.footer-right {
+    margin-top: 85px;
+    margin-left: 120px; /* Двигаем правее, но не по центру */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footer-links a {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 8px 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+/* Общие стили для адаптации */
+@media (max-width: 1024px) {
+    .menu {
+        padding: 15px 0;
+    }
+    
+    .courses-container {
+        grid-template-columns: repeat(1, 1fr); /* Один курс в ряд */
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    .course {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .courses-container {
+        padding: 5px;
+    }
+    
+    .course {
+        width: 100%;
+        height: auto;
+    }
+    
+    .register-btn {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        text-align: center;
+    }
+    
+    .course-info h3 {
+        font-size: 20px;
+    }
+    
+    .course-info ul {
+        font-size: 14px;
+    }
+    
+    .register-btn {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}

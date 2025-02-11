@@ -1,0 +1,103 @@
+
+/* Контейнер для всех блоков */
+.courses-container {
+    display: grid;
+    gap: 45px;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr); /* 2 контейнера в ряд */
+}
+
+/* Сам блок курса (он будет картинкой) */
+.course-2 {
+    width: calc(50% - 25px); /* Два в ряд с отступами */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 95%;  /* Размер из твоего макета */
+    height: 342px; /* Размер из твоего макета */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 20px;
+    overflow: hidden;
+}
+.course-title {
+    justify-content: center;
+    margin-top: 299px;
+    font-size: 24px;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+}
+.course-details {
+    list-style: disc; /* Добавляет точки перед li */
+    padding-left: 20px; /* Отступ слева от края блока */
+    margin-top: 10px; /* Опускаем вниз */
+    color: #7E7E7E;
+}
+
+/* Блок с текстовой информацией (название, описание, цена) */
+.cours-info-2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60%;
+    color: black;
+}
+
+/* Название курса */
+.course-info-2 h3 {
+    margin-top: 10px;
+    font-size: 24px;  /* Увеличил размер */
+    font-weight: bold; /* Жирный */
+    font-family: 'Russo One', sans-serif; /* Шрифт */
+}
+
+/* Описание (список li) */
+.course-info-2 ul {
+    list-style-type: disc;  /* Добавил точки */
+    padding-left: 20px;  /* Отступ слева */
+    margin-top: 80px; /* Отодвинул вниз */
+}
+
+/* Каждый пункт списка */
+.course-info-2 ul li {
+    font-size: 16px;
+    color: #7E7E7E;
+    margin-bottom: 5px;
+}
+
+/* Цена (в самом низу слева, максимально опущена) */
+.price-2 {
+    font-size: 22px;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+    margin-top: 80px; /* Отодвигаем от <li> */
+    display: block;
+    left: 20px;
+}
+/* Кнопка "Записаться" */
+.register-btn {
+    margin-bottom: 12px;
+    margin-right: 80px;
+    position: absolute;
+    bottom: 10px; /* Чуть ниже */
+    right: 10px;  /* Отступ справа */
+    background-color: #132766;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Эффект при наведении */
+.register-btn:hover {
+    background-color: #1d3c8e;
+
+}
